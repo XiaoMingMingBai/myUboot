@@ -1,0 +1,69 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+HEADER           0x0000000000000000 0x0000000000003000 rw
+RAM              0x000000002ffc2500 0x000000000003cb00 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.glue_7         0x0000000000000000        0x0
+ .glue_7        0x0000000000000000        0x0 linker stubs
+
+.glue_7t        0x0000000000000000        0x0
+ .glue_7t       0x0000000000000000        0x0 linker stubs
+
+.vfp11_veneer   0x0000000000000000        0x0
+ .vfp11_veneer  0x0000000000000000        0x0 linker stubs
+
+.v4_bx          0x0000000000000000        0x0
+ .v4_bx         0x0000000000000000        0x0 linker stubs
+
+.text           0x0000000000000000        0x0
+ .text          0x0000000000000000        0x0 /home/ming/tf-a-stm32mp-2.2.r2-r0/tf-a-stm32mp-2.2.r2/../build/trusted/stm32mp1.o
+
+.header         0x0000000000000000        0x0
+                0x0000000000000000                __HEADER_START__ = .
+ *(.header)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __HEADER_END__ = .
+                0x000000002ffc2500                . = 0x2ffc2500
+
+.data           0x000000002ffc2500    0x39048
+                0x000000002ffc3000                . = ALIGN (0x1000)
+ *fill*         0x000000002ffc2500      0xb00 
+                0x000000002ffc3000                __DATA_START__ = .
+ *(.data*)
+ .data          0x000000002ffc3000        0x0 /home/ming/tf-a-stm32mp-2.2.r2-r0/tf-a-stm32mp-2.2.r2/../build/trusted/stm32mp1.o
+                0x0000000000007b00                . = 0x7b00
+ *fill*         0x000000002ffc3000     0x7000 
+                0x000000002ffca000                __DTB_IMAGE_START__ = .
+ *(.dtb_image*)
+ .dtb_image     0x000000002ffca000     0x4b20 /home/ming/tf-a-stm32mp-2.2.r2-r0/tf-a-stm32mp-2.2.r2/../build/trusted/stm32mp1.o
+                0x000000002ffceb20                __DTB_IMAGE_END__ = .
+                0x0000000000011b00                . = 0x11b00
+ *fill*         0x000000002ffceb20     0x54e0 
+                0x000000002ffd4000                __BL2_IMAGE_START__ = .
+ *(.bl2_image*)
+ .bl2_image     0x000000002ffd4000    0x121fc /home/ming/tf-a-stm32mp-2.2.r2-r0/tf-a-stm32mp-2.2.r2/../build/trusted/stm32mp1.o
+                0x000000002ffe61fc                __BL2_IMAGE_END__ = .
+                0x0000000000028b00                . = 0x28b00
+ *fill*         0x000000002ffe61fc     0x4e04 
+                0x000000002ffeb000                __BL32_IMAGE_START__ = .
+ *(.bl32_image*)
+ .bl32_image    0x000000002ffeb000    0x10548 /home/ming/tf-a-stm32mp-2.2.r2-r0/tf-a-stm32mp-2.2.r2/../build/trusted/stm32mp1.o
+                0x000000002fffb548                __BL32_IMAGE_END__ = .
+                0x000000002fffb548                __DATA_END__ = .
+                0x000000002fffb548                __TF_END__ = .
+LOAD /home/ming/tf-a-stm32mp-2.2.r2-r0/tf-a-stm32mp-2.2.r2/../build/trusted/stm32mp1.o
+OUTPUT(/home/ming/tf-a-stm32mp-2.2.r2-r0/tf-a-stm32mp-2.2.r2/../build/trusted/tf-a-stm32mp157a-fsmp1a.elf elf32-littlearm)
+
+.bss            0x000000002fffb548        0x0
+ .bss           0x000000002fffb548        0x0 /home/ming/tf-a-stm32mp-2.2.r2-r0/tf-a-stm32mp-2.2.r2/../build/trusted/stm32mp1.o
+
+.ARM.attributes
+                0x0000000000000000       0x2d
+ .ARM.attributes
+                0x0000000000000000       0x2d /home/ming/tf-a-stm32mp-2.2.r2-r0/tf-a-stm32mp-2.2.r2/../build/trusted/stm32mp1.o

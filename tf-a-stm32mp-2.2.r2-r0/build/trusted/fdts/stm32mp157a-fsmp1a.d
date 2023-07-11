@@ -1,0 +1,1 @@
+/home/ming/tf-a-stm32mp-2.2.r2-r0/tf-a-stm32mp-2.2.r2/../build/trusted/fdts/stm32mp157a-fsmp1a.dtb: /home/ming/tf-a-stm32mp-2.2.r2-r0/tf-a-stm32mp-2.2.r2/../build/trusted/fdts/stm32mp157a-fsmp1a.pre.dts
