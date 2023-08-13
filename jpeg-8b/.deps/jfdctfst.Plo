@@ -1,0 +1,158 @@
+jfdctfst.lo: jfdctfst.c \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ jinclude.h jconfig.h \
+ /home/ming/toolchain/gcc-7.5.0/lib/gcc/arm-linux-gnueabihf/7.5.0/include/stddef.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/stdlib.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/libc-header-start.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/features.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/long-double.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/waitflags.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/waitstatus.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/sys/types.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/typesizes.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/clock_t.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/clockid_t.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/time_t.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/timer_t.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/endian.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/endian.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/byteswap.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/byteswap-16.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/uintn-identity.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/sys/select.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/select.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/sigset.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/struct_timeval.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/struct_timespec.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/sys/sysmacros.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/sysmacros.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/pthreadtypes.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/alloca.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-bsearch.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-float.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/stdio.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/libio.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/_G_config.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/wchar.h \
+ /home/ming/toolchain/gcc-7.5.0/lib/gcc/arm-linux-gnueabihf/7.5.0/include/stdarg.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/stdio_lim.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/sys_errlist.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/stdio.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/string.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/xlocale.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/string.h \
+ /home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/string2.h \
+ jpeglib.h jmorecfg.h jpegint.h jerror.h jdct.h
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h:
+
+jinclude.h:
+
+jconfig.h:
+
+/home/ming/toolchain/gcc-7.5.0/lib/gcc/arm-linux-gnueabihf/7.5.0/include/stddef.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/stdlib.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/libc-header-start.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/features.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/sys/cdefs.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/wordsize.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/long-double.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/gnu/stubs.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/gnu/stubs-hard.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/waitflags.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/waitstatus.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/sys/types.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/typesizes.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/clock_t.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/clockid_t.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/time_t.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/timer_t.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/endian.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/endian.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/byteswap.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/byteswap-16.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/uintn-identity.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/sys/select.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/select.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/sigset.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/struct_timeval.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/types/struct_timespec.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/sys/sysmacros.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/sysmacros.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/pthreadtypes.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/alloca.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-bsearch.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/stdlib-float.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/stdio.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/libio.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/_G_config.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/wchar.h:
+
+/home/ming/toolchain/gcc-7.5.0/lib/gcc/arm-linux-gnueabihf/7.5.0/include/stdarg.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/stdio_lim.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/sys_errlist.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/stdio.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/string.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/xlocale.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/string.h:
+
+/home/ming/toolchain/gcc-7.5.0/arm-linux-gnueabihf/libc/usr/include/bits/string2.h:
+
+jpeglib.h:
+
+jmorecfg.h:
+
+jpegint.h:
+
+jerror.h:
+
+jdct.h:

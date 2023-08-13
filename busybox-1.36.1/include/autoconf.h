@@ -2,7 +2,7 @@
  * Automatically generated C config: don't edit
  * Busybox version: 1.36.1
  */
-#define AUTOCONF_TIMESTAMP "2023-07-14 10:33:37 CST"
+#define AUTOCONF_TIMESTAMP "2023-07-26 16:41:53 CST"
 
 #define CONFIG_HAVE_DOT_CONFIG 1
 #define ENABLE_HAVE_DOT_CONFIG 1
@@ -248,7 +248,7 @@
 #define ENABLE_FEATURE_SHARED_BUSYBOX 0
 #define IF_FEATURE_SHARED_BUSYBOX(...)
 #define IF_NOT_FEATURE_SHARED_BUSYBOX(...) __VA_ARGS__
-#define CONFIG_CROSS_COMPILER_PREFIX "arm-linux-gnueabihf-"
+#define CONFIG_CROSS_COMPILER_PREFIX "arm-linux-guneabihf-"
 #define ENABLE_CROSS_COMPILER_PREFIX 1
 #ifdef MAKE_SUID
 # define IF_CROSS_COMPILER_PREFIX(...) __VA_ARGS__ "CONFIG_CROSS_COMPILER_PREFIX"
@@ -344,7 +344,7 @@
 #define ENABLE_INSTALL_SH_APPLET_SCRIPT_WRAPPER 0
 #define IF_INSTALL_SH_APPLET_SCRIPT_WRAPPER(...)
 #define IF_NOT_INSTALL_SH_APPLET_SCRIPT_WRAPPER(...) __VA_ARGS__
-#define CONFIG_PREFIX "/home/ming/rootfsmy"
+#define CONFIG_PREFIX "~/myrootfs"
 #define ENABLE_PREFIX 1
 #ifdef MAKE_SUID
 # define IF_PREFIX(...) __VA_ARGS__ "CONFIG_PREFIX"

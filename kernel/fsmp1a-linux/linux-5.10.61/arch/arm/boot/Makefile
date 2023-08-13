@@ -68,6 +68,7 @@ $(obj)/zImage:	$(obj)/compressed/vmlinux FORCE
 
 endif
 
+LOADADDR = 0xc2000040
 ifneq ($(LOADADDR),)
   UIMAGE_LOADADDR=$(LOADADDR)
 else

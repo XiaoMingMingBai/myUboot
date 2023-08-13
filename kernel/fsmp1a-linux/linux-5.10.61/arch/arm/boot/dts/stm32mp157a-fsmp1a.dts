@@ -15,8 +15,96 @@
 / {
 	model = "STMicroelectronics STM32MP157A-DK1 Discovery Board";
 	compatible = "st,stm32mp157a-dk1", "st,stm32mp157";
-
+    aliases {
+        serial0 = &uart4;
+        serial5 = &usart3;                                                                       
+    };  
 	chosen {
 		stdout-path = "serial0:115200n8";
 	};
+    reserved-memory {
+            gpu_reserved: gpu@d4000000 {
+                  reg = <0xd4000000 0x4000000>;
+                  no-map;
+              };  
+
+            optee_memory: optee@0xde000000 {
+                  reg = <0xde000000 0x02000000>;
+                  no-map;
+              };                                                                                           
+    };  
+	node:mynode@0x12345678{
+		compatible = "xiaomingmingbai,mynode";
+		string = "DC23032 hello";
+		uint   = <0x11223344 0xaabbccdd>;
+		bindata = [00 0c 29 7b f9 be];
+		mixeddata = "devicetree",<0x1234567>,[11 22 33];
+	};
+	myleds{
+		core_leds{
+			led1 = <&gpioz 5 0>;
+			led2 = <&gpioz 6 0>;
+			led3 = <&gpioz 7 0>;
+		};
+		extend_leds{
+			led1 = <&gpioe 10 0>;
+			led2 = <&gpiof 10 0>;
+			led3 = <&gpioe 8 0>;
+		};
+	};
+	myirqs{
+		interrupt-parent = <&gpiof>;
+		interrupts = <9 0>,<7 0>,<8 0>;
+		keys = <&gpiof 9 0>;
+	};
+	key_led{
+		compatible = "ming,key_led";
+		interrupt-parent = <&gpiof>;
+		interrupts = <9 0>;
+		key_gpio = <&gpiof 9 0>;
+		led1 = <&gpioe 10 0>;
+	};
+	myplatform{
+		compatible = "ming,myplatform";
+		reg = <0x12345678 49>;
+		interrupt-parent = <&gpiof>;
+		interrupts = <9 0>;
+	};
+};
+
+&i2c1{
+    pinctrl-names   = "default","sleep";
+    pinctrl-0   = <&i2c1_pins_b>;      //工作状态：gpiof14和gpiof15复用为AF5功能
+    pinctrl-1   = <&i2c1_sleep_pins_b>;//休眠状态：将管脚设置为ANALOG 
+    clock-frequency = <100000>;        //i2c速率，默认就是100Khz
+    i2c-scl-rising-time-ns = <185>;    //上升沿时间
+    i2c-scl-falling-time-ns = <20>;    //下降沿时间
+	status = "okay";                  //控制器使能
+
+	si7006@40{                        //si7006节点
+        compatible = "ming,si7006";   //和自己驱动匹配的名字
+        reg = <0x40>;                 //从机地址
+    };
+	ap3216@1e{
+		compatible = "ming,ap3216";
+		reg = <0x1e>;
+		interrupt-parent = <&gpiof>;
+		interrupts = <13 0>;
+	};
+};
+
+&spi4{
+    pinctrl-names   = "default","sleep";
+    pinctrl-0   = <&spi4_pins_b>;      //工作状态：E12 E13 E14复用为AF5功能
+    pinctrl-1   = <&spi4_sleep_pins_b>;//休眠状态：将管脚设置为ANALOG 
+    cs-gpios = <&gpioe 11 0>;          //片选管脚
+	status = "okay";                   //将控制器使能
+	
+    m74hc595@0{
+    	compatible = "ming,m74hc595";
+        reg = <0>;
+        spi-max-frequency = <10000000>; //10MHz
+        //spi-cpol;         //cpol=1
+        //spi-cpha;         //cpha=1
+    };
 };

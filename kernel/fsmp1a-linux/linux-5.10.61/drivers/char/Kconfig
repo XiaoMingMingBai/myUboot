@@ -7,12 +7,11 @@ menu "Character devices"
 
 source "drivers/tty/Kconfig"
 
-# ************my led drivers***********
-config MY_DOME
-	tristate "my dome drivers"
+config LED_DRIVER
+	tristate "led driver"
 	default n
-	help 
-	  this is test dome
+	help
+	  this is led driver...
 
 config TTY_PRINTK
 	tristate "TTY driver to output user messages via printk"

@@ -3,8 +3,6 @@
 # Makefile for the kernel character device drivers.
 #
 
-#**************** my drivers****************
-obj-$(CONFIG_MY_DOME)		+=dome.o
 
 obj-y				+= mem.o random.o
 obj-$(CONFIG_TTY_PRINTK)	+= ttyprintk.o
@@ -50,3 +48,4 @@ obj-$(CONFIG_PS3_FLASH)		+= ps3flash.o
 obj-$(CONFIG_XILLYBUS)		+= xillybus/
 obj-$(CONFIG_POWERNV_OP_PANEL)	+= powernv-op-panel.o
 obj-$(CONFIG_ADI)		+= adi.o
+obj-$(CONFIG_LED_DRIVER)        += myled.o

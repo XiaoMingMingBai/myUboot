@@ -370,7 +370,6 @@ include scripts/subarch.include
 #ARCH		?= $(SUBARCH)
 ARCH ?= arm
 CROSS_COMPILE ?= arm-linux-gnueabihf-
-
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
 SRCARCH 	:= $(ARCH)
